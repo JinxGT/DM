@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-const prefix = "send"
+const prefix = "."
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag} :)`);
-    bot.user.setActivity('Apps are open!', { 
-        type: "STREAMING",
+    bot.user.setActivity('new TDC server', { 
+        type: "WATCHING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     });
 
