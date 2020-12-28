@@ -14,7 +14,7 @@ bot.on('ready', () => {
 )
 
 bot.on('message', message => {
-
+	
     let messageArray = message.content.split(" ");
     let command = messageArray[0];
     let com = command.toLowerCase();
