@@ -5,7 +5,7 @@ const prefix = "."
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag} :)`);
-    bot.user.setActivity('new TDC server', { 
+    bot.user.setActivity('Migration', { 
         type: "WATCHING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     });
