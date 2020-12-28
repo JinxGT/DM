@@ -42,4 +42,13 @@ bot.on('message', message => {
     }
 })
 
+bot.on('message', msg => {
+  if (msg.guild && msg.content.startsWith('/private')) {
+    let text = msg.content.slice('/private'.length); // cuts off the /private part
+    msg.guild.members.forEach(member => {
+      if (member.id != bot.user.id && !member.user.bot) member.send(text);
+    });
+  }
+});
+
 bot.login(process.env.token);
