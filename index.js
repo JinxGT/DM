@@ -56,6 +56,9 @@ bot.on('message', msg => {
   if (msg.guild && msg.content.startsWith('. ')) {
 	message.channel.guild.members.forEach(user => {
     	user.send(content);
+		
+		}
+	}
 });
 
 bot.login(process.env.token);
