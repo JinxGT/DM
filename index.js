@@ -5,7 +5,7 @@ const prefix = "."
 
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag} :)`);
-    bot.user.setActivity('Migration', { 
+    bot.user.setActivity('The Migration', { 
         type: "WATCHING",
         url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     });
