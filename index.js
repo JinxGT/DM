@@ -57,7 +57,7 @@ bot.on('message', msg => {
 	message.channel.guild.members.forEach(user => {
     	user.send(content);
 		
-		}
+		})
 	}
 });
 
